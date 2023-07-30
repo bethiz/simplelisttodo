@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+header{
+    background-color: lightpink;
+    display: inline-flex;
+    width: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: whitesmoke;
+  }
+
+footer{
+    background-color: rgb(242, 237, 237);
+    opacity: 50%;
+    text-align: center;
+    position: relative;
+    bottom: -250px;
+    z-index: 1;
+   padding: 15px 0;
+}
+h1{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+}
+ul {
+    margin-top: 5rem;
+    list-style: none;
+    font-weight: bold; 
+  }
+  
+  ul li {
+    padding: 5px;
+    background: #f4f4f4;
+    margin: 5px 0;
+  }
+
+  p{
+    text-align: center;
+  }
+
+
+  
+/*class*/
+
+.dropdown{
+  display: none;
+}
+.button1{
+    padding: 10px 10rem;
+   margin-left: auto;
+}
+#my-task{
+    text-align: center;
+}
+.addbtn{
+    background-color: palevioletred;
+    padding: 10px;
+    margin: 1opx;
+}
+.button2{
+    text-align: center; 
+}
+
+
+
+/* id*/
+#tasklist{
+  margin: auto;
+  width: 500px;
+  overflow: auto;
+  padding: 3rem 2rem;
+}
+#task{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-color: black;
+    background-color: gainsboro;
+}
+#title{
+    padding: 10px 28px;
+    margin: 10px;
+    text-align: center;
+    border-color: black;
+    background-color: gainsboro;
+}
+#button1{
+    padding: 10px;
+    background-color: palevioletred;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+    
+  }
+#button2{
+    padding: 10px;
+    margin: 10px;
+    background-color: palevioletred;
+}
+#button3{
+  padding: 10px;
+  margin: 10px;
+  background-color: palevioletred;
+}
+
+
+/********************************for index/signup ************************************/
+.container {
+    display: flex;
+    margin: auto;
+    width: 500px;
+    overflow: auto;
+    padding: 3rem 2rem;
+    
+  }
+#my-form {
+    padding: 2rem;
+    background: #f4f4f4;
+  }
+  #my-form label {
+    display: inline-flex;
+  }
+  
+  #my-form input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+  }
+  
+h2{
+    text-align: center;
+    padding: 2rem;
+
+}
+  #button1:hover{
+    background-color: #f1f1f1;
+  }
+  #button2:hover{
+    background-color: #f1f1f1;
+  }
+  .addbtn:hover{
+    background-color: #f1f1f1;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .btn:hover {
+    background: #444;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }
+
+
+
+/*for javascript*/
+  .deletebtn {
+  
+    float: right;
+    padding: 5px;
+    background-color: palevioletred;
+    margin: 0px 20px;  
+  }
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }
+  .done{
+    float: right;
+    padding: 5px;
+    background-color: palevioletred;
+    
+    
+  }
+
+/*for small screen size*/
+@media screen and (max-width:600px){
+  .button1{
+    display: none;
+  }
+
+  /*style dropdown button*/
+  .dropbtn{
+    background-color: palevioletred;
+    padding: 16px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border: none;
+  }
+
+  /*the container div - needed to position the dropdown content*/
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+/*dropdown content(hidden by default)*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0,2);
+ z-index: 1;
+}
+
+/*link inside the dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+/*change color of dropdown links on hover*/
+.dropdown-content a:hover{
+  background-color: palevioletred;
+}
+/*show dropdown menu on hover*/
+.dropdown:hover .dropdown-content{
+
+  display: block;
+}
+/*change background color of dropdown button when dropdown content is shown*/
+.dropdown:hover .dropbtn{
+  background-color: purple;
+  color: #f1f1f1;
+}
+  
+}
+
+
+
+
+
+
+
+/********************************for dashboard/go pro ************************************/
+#gobtn{
+  background-color: palevioletred;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 7px 7px 10px gray;
+  margin: 20px 0px 0px 20px;
+}
+
+#gobtn:hover{
+  background-color: #f1f1f1;
+  box-shadow: 7px 7px 10px palevioletred;
+ 
+}
+/*****for goPro.html*****/
+.container2{
+  width:100%;
+ height:auto;
+ background-color: lightpink;
+ padding: 10px;
+ margin: 5px;
+ text-align: center;
+
+}
+.container2 img{
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  margin: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #000000;
+}
+.container-plan{
+  width:100%;
+  height:auto;
+  padding: 10px;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.plan img{
+  background-color: white;
+  width: 300px;
+  height: 400px;
+  margin: 5px;
+  margin-bottom: 5pxpx;
+  text-align: center;
+  border: 2px solid #000000;
+}
+
+#planbtn{
+  background-color: purple;
+  color: white;
+  font-size: bold;
+  padding: 16px;
+  border-radius: 40px;
+  border: none;
+  margin: 10px 5px 10px 100px;
+  display: block;
+}
+#planbtn:hover{
+  background-color: palevioletred;
+  color: black;
+}
+#planbtn a{
+  background-color: purple;
+  color: white;
+  font-size: bold;
+}
+#planbtn:hover a{
+  background-color: palevioletred;
+  color: black;
+}
+
+@media screen and (max-width:600px){
+  .container-plan{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }
+
+
+
+
+
+/*****for dashboard.html*****/
+.container-banner{
+  width:100%;
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid #000000;
+  height: 40em;
+  overflow: hidden;
+  position: relative;
+}
+.container-banner img{
+  width: 100%;
+  height: auto;
+  
+}
+.container-banner>*{
+  position: absolute;
+  left: 100%;
+  top: 0;
+  animation: 12s autoplay infinite ease-in-out;
+}
+@keyframes autoplay{
+  0%{left:100%}
+  4%{left:0%}
+  33.33%{left:0%}
+  37.33%{left:-100%}
+  100%{left:-100%}
+}
+.container-banner>*:nth-child(1){animation-delay: 0s;}
+.container-banner>*:nth-child(2){animation-delay: 4s;}
+.container-banner>*:nth-child(3){animation-delay: 8s;}
+@media screen and (max-width:600px){
+  .container-banner{
+    height: 15em;
+  }
+  }
+.container-community{
+  border: 2px solid #000000;
+  width:100%;
+  height:auto;
+  padding: 15px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  
+}
+.peopleSay{
+  background-color: lightpink;
+  border: 5px solid gray;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+@media screen and (max-width:600px){
+  .peopleSay{
+    width: auto;
+    height: auto;
+  }
+  }
+.profile img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.feedback img{
+  background-color: white;
+  width: 110px;
+  height: 110px;
+  margin: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}

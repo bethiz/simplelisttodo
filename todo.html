@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <h1>TO-DO Application</h1>
+        <h1>TO-DO Aplication</h1>
         <div class="button1">
             <button id="button1"><a href="todo.html">ToDo App</a></button>  
             <button id="button1"><a href="dashboard.html">dashboard</a></button>
@@ -36,29 +36,41 @@
         </div>
     </header>
 
-    <section class="container">
-        <form id="my-form">
+    <main>
 
-            <h2>Login</h2>
-
-            <div>
-                <label>ID name:</label>
-                <input type="text" id="IDname">
-            </div>
+        <section>
+            <h2>Hello !</h2>
 
             <div>
-                <label for="email">Email:</label>
-                <input type="text" id="email">
+
+                <form id="my-task">
+                    <input type="text" id="title" placeholder="insert title">
+
+                    <div>
+                    <input type="text" id="task" placeholder="insert task">
+                     <!--icon button + -->
+                    <button class="addbtn" type="submit" value="submit">+</button>
+                     </div>
+
+                </form> 
             </div>
+            
+        </section>
 
-            <div class="msg"></div>
+         <!--done list here del-->
+        <div>
+            <ul id="tasklist"></ul>
+        </div>
 
-            <input class="btn" type="submit" value="submit">
-            <h4>dont have account yet ? <a href="signup.html">Sign up </a>first</h4>
-        </form>
-    </section>
+        <div class="button2">
+            <button id="button2">Delete</button>
+            <button id="button3">Save</button>
+        </div>
 
-    <script src="main.js"></script>
+    </main>
+
 </body>
+<script src="todo.js"></script>
 <footer>copyright by bettyIsmail 2023</footer>
+
 </html>

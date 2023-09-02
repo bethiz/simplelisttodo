@@ -18,8 +18,8 @@ function onSubmit(e){
         msg.innerHTML='* please enter all field';
         setTimeout(()=>msg.remove(),3000);
     }else{
-        console.log("success");
-        window.location="task.html";
+        alert("signup success,log in to continue");
+        window.location="index.html";
         //clear fields
         IDnameinput.value='';
         emailinput.value='';
@@ -48,7 +48,7 @@ function onSubmit(e){
         msg.innerHTML='* please enter all field';
         setTimeout(()=>msg.remove(),3000);
     }else{
-        console.log("success");
+        alert("log in success");
         window.location="todo.html";
         //clear fields
         IDnameinput.value='';
